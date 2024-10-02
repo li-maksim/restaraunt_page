@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background: url(img/bg.jpg) center center/cover no-repeat, grey;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0 10px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs {
+    box-sizing: border-box;
+    display: flex;
+    width: 600px;
+    height: 90%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    width: 200px;
+}
+
+.tab {
+    width: 100px;
+    height: 65%;
+    background-color: #3f3737;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.tab:hover {
+    box-shadow: 0 0 5px 5px black;
+}
+
+.tab:active {
+    transform: scale(110%);
+}
