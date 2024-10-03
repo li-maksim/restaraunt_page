@@ -28,6 +28,6 @@ export const HomeTab = (() => {
     home.appendChild(homeContent);
     content.appendChild(home);
 
-    return (home, h2, homeContent, descr, imgs);
+    return {home, h2, homeContent, descr, imgs};
 
 });

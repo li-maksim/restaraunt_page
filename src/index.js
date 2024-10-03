@@ -1,5 +1,5 @@
 import "./style.css";
 import { HomeTab } from "./home";
+import { MenuTab } from "./menu";
 
-HomeTab();
-console.log('Omg, hi!');
+MenuTab();
