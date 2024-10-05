@@ -1,6 +1,7 @@
 import "./style.css";
 import { HomeTab } from "./home";
 import { MenuTab } from "./menu";
+import { ContactsTab } from "./contacts";
 
 const Buttons = (() => {
 
@@ -19,8 +20,13 @@ const Buttons = (() => {
             hideTab();
             MenuTab();
         };
+
+        function contacts() {
+            hideTab();
+            ContactsTab();
+        }
     
-        return {home, menu}
+        return {home, menu, contacts}
     })();
 
     function rmClass() {
@@ -39,6 +45,10 @@ const Buttons = (() => {
     menuBtn.addEventListener('click', rmClass);
     menuBtn.addEventListener('click', activate);
     menuBtn.addEventListener('click', SwitchTabs.menu);
+    const contactsBtn = document.querySelector('#contacts');
+    contactsBtn.addEventListener('click', rmClass);
+    contactsBtn.addEventListener('click', activate);
+    contactsBtn.addEventListener('click', SwitchTabs.contacts);
 
 })();
 
