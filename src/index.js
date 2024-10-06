@@ -1,5 +1,6 @@
 import "./style.css";
 import { HomeTab } from "./home";
+import { menuBtn2 } from "./home";
 import { MenuTab } from "./menu";
 import { ContactsTab } from "./contacts";
 
