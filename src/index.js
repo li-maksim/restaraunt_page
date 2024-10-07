@@ -30,7 +30,7 @@ export const Buttons = (() => {
     })();
 
     function rmClass() {
-        const buttons = document.querySelectorAll('.tab');
+        const buttons = document.querySelectorAll('.button');
         buttons.forEach((el) => el.classList.remove('act_btn'));
     };
     function activate() {
@@ -49,6 +49,15 @@ export const Buttons = (() => {
     contactsBtn.addEventListener('click', rmClass);
     contactsBtn.addEventListener('click', activate);
     contactsBtn.addEventListener('click', SwitchTabs.contacts);
+
+    const hamMenu = document.querySelector(".ham_menu");
+
+    const offScreenMenu = document.querySelector(".off_screen_menu");
+
+    hamMenu.addEventListener("click", () => {
+        hamMenu.classList.toggle("active");
+        offScreenMenu.classList.toggle("active");
+    });
 
     return {rmClass, activate, SwitchTabs};
 

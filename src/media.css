@@ -1,18 +1,38 @@
 @media (max-width: 1000px) {
-    #content {
-        width: 550px;
-    }
-    .footer {
+    body #content, body .footer {
         width: 550px;
     }
 }
 
 @media (max-width: 870px) {
-    .h1 {
+    body #content, body .footer {
+        width: 470px;
+    }
+    body .footer {
+        height: 150px;
+    }
+    .header .h1 {
         font-size: 1.1rem;
     }
     .tabs .button {
         width: 80px;
         font-size: 0.9rem;
+    }
+    #content #menu_btn2 {
+        width: 250px;
+        height: 28px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 670px) {
+    body .header {
+        justify-content: space-between;
+    }
+    .header .tabs {
+        display: none;
+    }
+    .header .ham_menu_wrapper {
+        display: block;
     }
 }

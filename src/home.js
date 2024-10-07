@@ -18,7 +18,6 @@ export const HomeTab = (() => {
 
     const descr = document.createElement('div');
     descr.setAttribute('class', 'text');
-    descr.setAttribute('class', 'home_descr');
     descr.textContent = "Bob's Burgers carries on the tradition of Mouthwatering Hamburgers made from Choice Beef, Ground Fresh Daily.  Other favorite menu selections include our award winning Pork Baby Back Ribs, The Mammoth Burger for hearty appetites, our Durham Ranch Bison Burger, and a variety of sandwiches and salads with homemade dressings and sauces to top everything off. Welcome!"
 
     let homeImgs = [];
