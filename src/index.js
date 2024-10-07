@@ -50,6 +50,13 @@ export const Buttons = (() => {
     contactsBtn.addEventListener('click', activate);
     contactsBtn.addEventListener('click', SwitchTabs.contacts);
 
+    const hamHomeBtn = document.querySelector('#ham_home');
+    hamHomeBtn.addEventListener('click', SwitchTabs.home);
+    const hamMenuBtn = document.querySelector('#ham_menu');
+    hamMenuBtn.addEventListener('click', SwitchTabs.menu);
+    const hamContactsBtn = document.querySelector('#ham_contacts');
+    hamContactsBtn.addEventListener('click', SwitchTabs.contacts);
+
     const hamMenu = document.querySelector(".ham_menu");
 
     const offScreenMenu = document.querySelector(".off_screen_menu");
