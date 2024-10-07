@@ -1,10 +1,9 @@
 import "./style.css";
 import { HomeTab } from "./home";
-import { menuBtn2 } from "./home";
 import { MenuTab } from "./menu";
 import { ContactsTab } from "./contacts";
 
-const Buttons = (() => {
+export const Buttons = (() => {
 
     const SwitchTabs = (() => {
         function hideTab() {
@@ -50,6 +49,8 @@ const Buttons = (() => {
     contactsBtn.addEventListener('click', rmClass);
     contactsBtn.addEventListener('click', activate);
     contactsBtn.addEventListener('click', SwitchTabs.contacts);
+
+    return {rmClass, activate, SwitchTabs};
 
 })();
 

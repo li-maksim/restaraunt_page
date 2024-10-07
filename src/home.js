@@ -2,6 +2,7 @@ import home1 from "./img/home1.jpg";
 import home2 from "./img/home2.jpg";
 import home3 from "./img/home3.jpg";
 import home4 from "./img/home4.jpg";
+import { Buttons } from "./index";
 
 export const HomeTab = (() => {
     const content = document.querySelector('#content');
@@ -36,9 +37,19 @@ export const HomeTab = (() => {
     homeImgs[3].src = home4;
 
     const menuLink = document.createElement('button');
-    menuLink.setAttribute('id', 'menu_btn');
+    menuLink.setAttribute('id', 'menu_btn2');
     menuLink.textContent = 'See our menu';
-;
+    function switchToMenu() {
+        Buttons.SwitchTabs.menu();
+    };
+    function activate() {
+        const menuBtn = document.querySelector('#menu');
+        menuBtn.classList.add('act_btn');
+    };
+    menuLink.addEventListener('click', Buttons.rmClass);
+    menuLink.addEventListener('click', activate);
+    menuLink.addEventListener('click', switchToMenu);
+
     homeContent.appendChild(descr);
     homeContent.appendChild(imgs);
     homeContent.appendChild(menuLink);

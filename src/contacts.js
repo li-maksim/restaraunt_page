@@ -12,7 +12,7 @@ export const ContactsTab = (() => {
 
     const p1 = document.createElement('p');
     p1.setAttribute('class', 'text');
-    p1.textContent = 'Give us feedback! Here are our contacts:';
+    p1.textContent = 'Give us feedback!';
 
     const contactCard = document.createElement('div');
     contactCard.setAttribute('class', 'contact_card');
@@ -21,7 +21,7 @@ export const ContactsTab = (() => {
     h3.textContent = 'Email'
     const p2 = document.createElement('p');
     p2.setAttribute('class', 'email');
-    p2.textContent = 'maksim600006@gmail.com';
+    p2.textContent = 'bobs@burgers.com';
 
     contactCard.appendChild(h3);
     contactCard.appendChild(p2);

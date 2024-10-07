@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-image: url(img/bg.jpeg);
+    background-image: url(img/red_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -63,7 +63,7 @@ body {
     box-shadow: 0 0 3px 3px grey;
 }
 
-.tab:hover {
+.tab:hover, #menu_btn2:hover {
     box-shadow: 0 0 5px 5px black;
 }
 
@@ -103,6 +103,20 @@ body {
     margin-top: 15px;
 }
 
+#menu_btn2 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    background-color: #3f3737;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 25px;
+}
+
 .menu_content .menu_card {
     display: grid;
     grid-template-columns: 25% 50% 25%;
@@ -130,9 +144,10 @@ body {
 .footer {
     box-sizing: border-box;
     width: 750px;
+    height: 200px;
     margin: 0 auto;
     padding: 20px 30px 20px 30px;
-    background-color: #fff;
+    background-color: #b3b1b1;
     font-size: 0.8rem;
     display: flex;
     align-items: end;
