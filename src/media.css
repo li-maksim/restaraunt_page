@@ -1,0 +1,18 @@
+@media (max-width: 1000px) {
+    #content {
+        width: 550px;
+    }
+    .footer {
+        width: 550px;
+    }
+}
+
+@media (max-width: 870px) {
+    .h1 {
+        font-size: 1.1rem;
+    }
+    .tabs .button {
+        width: 80px;
+        font-size: 0.9rem;
+    }
+}

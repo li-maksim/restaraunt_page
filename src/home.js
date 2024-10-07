@@ -37,6 +37,7 @@ export const HomeTab = (() => {
     homeImgs[3].src = home4;
 
     const menuLink = document.createElement('button');
+    menuLink.setAttribute('class', 'button');
     menuLink.setAttribute('id', 'menu_btn2');
     menuLink.textContent = 'See our menu';
     function switchToMenu() {

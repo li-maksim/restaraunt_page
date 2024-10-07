@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-image: url(img/red_bg.jpg);
+    background-image: url(img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -26,18 +26,18 @@ body {
 }
 
 .logo {
-    width: 90px;
-    height: 90px;
+    width: 85px;
+    height: 85px;
 }
 
 .tabs {
     box-sizing: border-box;
     display: flex;
-    width: 600px;
+    width: 700px;
     height: 90%;
     justify-content: right;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     padding: 0;
 }
 
@@ -47,24 +47,28 @@ body {
     width: 175px;
 }
 
-.tab {
+.text {
+    font-size: 0.9rem;
+}
+
+.button {
     width: 100px;
     height: 35px;   
-    background-color: #3f3737;
+    background-color: #8A684A;
     border: none;
     cursor: pointer;
     color: #fff;
     font-size: 1.1rem;
     border-radius: 25px;
+    font-weight: 700;
 }
 
 .act_btn {
-    background-color: #000;
-    box-shadow: 0 0 3px 3px grey;
+    background-color: #724C29;
 }
 
 .tab:hover, #menu_btn2:hover {
-    box-shadow: 0 0 5px 5px black;
+    background-color: #724C29;
 }
 
 .tab:active {
@@ -99,7 +103,7 @@ body {
 .home_img {
     display: block;
     margin: 0 auto;
-    width: 600px;
+    max-width: 90%;
     margin-top: 15px;
 }
 
@@ -109,18 +113,22 @@ body {
     margin-top: 20px;
     height: 40px;
     width: 200px;
-    background-color: #3f3737;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.1rem;
-    border-radius: 25px;
+}
+
+.menu_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 25px;
 }
 
 .menu_content .menu_card {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    width: 570px;
+    grid-template-columns: 20% 70% 10%;
     grid-template-rows: 50% 50%;
+    align-items: center;
 }
 
 .menu_content .menu_card .h3 {
@@ -133,12 +141,51 @@ body {
     grid-row: 2 / 3;
 }
 
+.menu_content .menu_card .price {
+    margin-left: 15px;
+    width: 30px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
 .menu_img {
     width: 100px;
     height: 100%;
     border-radius: 50%;
     grid-row: 1 / 3;
     grid-column: 1 / 2;
+}
+
+#content .contacts_content .form {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#content .contacts_content .form .input {
+    padding-left: 5px;
+    width: 250px;
+    height: 30px;
+    font-size: 0.9rem;
+}
+
+#content .contacts_content .message {
+    padding-left: 5px;
+    max-width: 500px;
+    min-width: 200px;
+    min-height: 100px;
+    max-height: 150px;
+    font-size: 0.9rem;
+}
+
+#content .contacts_content #submit_btn {
+    width: 300px;
+    height: 30px;
+}
+
+#content .contacts_content .submit_btn:hover {
+    background-color: #724C29;
 }
 
 .footer {
@@ -153,3 +200,5 @@ body {
     align-items: end;
     justify-content: space-between;
 }
+
+@import url(media.css);

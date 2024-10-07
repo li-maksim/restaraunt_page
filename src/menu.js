@@ -68,7 +68,7 @@ export const MenuTab = (() => {
 
     menuCards[5].img.src = menu6;
     menuCards[5].h3.textContent = 'Pizza Burger';
-    menuCards[5].descr.textContent = 'Pizza + Burger!!! Bacon. beef patty, cheese, tomatoes, special sauce';
+    menuCards[5].descr.textContent = 'Pizza + Burger!!! Bacon, beef patty, cheese, tomatoes, special sauce';
     menuCards[5].price.textContent = '$9.69';
 
     menu.appendChild(h2);
