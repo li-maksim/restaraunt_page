@@ -60,12 +60,10 @@ export const Buttons = (() => {
     const hamMenu = document.querySelector(".ham_menu");
     const offScreenMenu = document.querySelector(".off_screen_menu");
     const hamBtns = document.querySelectorAll('.ham_btn');
-
     function switchMenu() {
         hamMenu.classList.toggle("active");
         offScreenMenu.classList.toggle("active");
     };
-
     hamMenu.addEventListener("click", switchMenu);
     hamBtns.forEach(function(i) {i.addEventListener('click', switchMenu)});
 
