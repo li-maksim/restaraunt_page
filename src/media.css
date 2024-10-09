@@ -57,15 +57,28 @@
 @media (max-width: 580px) {
     body #content, body .footer {
         width: 320px;
+        padding: 20px 10px;
+    }
+    body #content .h2 {
+        margin-left: 10px;
     }
     body .footer {
         height: 130px;
     }
     #content .menu_content .menu_card {
-        width: 290px;
+        width: 260px;
+    }
+    #content .menu_content .menu_card .price {
+        margin-left: 0;
     }
     .menu_card .menu_img {
         width: 50px;
         height: 50px;
+    }
+    body #content .contacts_content #submit_btn {
+        width: 230px;
+    }
+    .header .off_screen_menu {
+        max-width: 280px;
     }
 }
