@@ -62,7 +62,7 @@ export const MenuTab = (() => {
     menuCards[3].price.textContent = '$6.9';
 
     menuCards[4].img.src = menu5;
-    menuCards[4].h3.textContent = 'Humble chickenburger';
+    menuCards[4].h3.textContent = 'Humble Chickenburger';
     menuCards[4].descr.textContent = 'Light burger! Chicken, tomatoes and a tasty sauce';
     menuCards[4].price.textContent = '$5.3';
 

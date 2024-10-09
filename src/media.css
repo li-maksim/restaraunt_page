@@ -21,9 +21,6 @@
     body #content, body .footer {
         width: 470px;
     }
-    body .footer {
-        height: 150px;
-    }
     .header .h1 {
         font-size: 1.1rem;
     }
